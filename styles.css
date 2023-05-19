@@ -1,0 +1,110 @@
+/* || VARIABLES */
+:root {
+    --TEXT-SHADOW: 0px 0px 1px black;
+    --GENERAL-FONT-COLOR: white;
+    --CUSTOM-PINK: #EFB0C9;
+    --CUSTOM-BLUE: #a2d2ff;
+}
+
+body {
+    font-family: 'Happy Monkey', cursive;
+    text-align: center;
+    background: linear-gradient(var(--CUSTOM-BLUE), var(--CUSTOM-PINK));
+    color: var(--GENERAL-FONT-COLOR);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    text-shadow: var(--TEXT-SHADOW);
+}
+
+.header__age,
+.header__birthday {
+    background: var(--CUSTOM-PINK);
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.gift-section {
+    margin-top: 6vh;
+}
+
+.gift-section__h2,
+.gift-section__h3 {
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+.gift-section__gift-img {
+    margin-top: 2em;
+    width: 400px;
+    height: 400px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#git-section__gift-img-last {
+    height: 200px;
+}
+
+.hover-show-happy:hover {
+    background-image: urL("images/happy.gif");
+}
+
+.hover-show-hot:hover {
+    background-image: urL("images/hot.gif");
+}
+
+.hover-show-genius:hover {
+    background-image: urL("images/genius.gif");
+}
+
+.hover-show-badass:hover {
+    background-image: urL("images/badass.gif");
+}
+
+#gift-section__gift-img-last:hover {
+    background-image: url("images/cheers.gif");
+}
+
+.gift_section__footer-text {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.gift_section__footer-text a {
+    color: var(--GENERAL-FONT-COLOR);
+}
+
+footer.gift-section {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+}
+
+
+/* || UTILITY CLASSES */
+.border-radius-round {
+    border-radius: 50%;
+}
+
+.main-picture {
+    width: 20vw;
+    border: 5px solid var(--CUSTOM-PINK);
+}
